@@ -17,7 +17,7 @@ imgurl6 = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ8NDQ
 #Change images in game_images using roulette
 os.chdir("../")
 for file in os.listdir(dir):
-    if not "py" in file:
+    if "jpg" in file:
         filename.append(file)
 for name in filename:
     value = randint(1,6)
